@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main(){
+    int n, prft=0;
+    printf("Enter Number to Check: ");
+    scanf("%d", &n);
+    for(int i=1; i<n; i++){
+        if(n%i==0){
+            prft+=i;
+        }
+    }
+    if(prft==n){
+        printf("Perfect Number");
+    }else{
+        printf("Not a Perfect Number");
+    }
+    return 0;
+}
